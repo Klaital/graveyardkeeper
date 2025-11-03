@@ -1,0 +1,46 @@
+.recipset-container {
+    display: grid;
+}
+.flowchart-container {
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: row;
+    justify-content: flex-start; /* Centers the flowchart horizontally */
+    align-items: center; /* Vertically aligns items in the center */
+    gap: 20px; /* Adds space between nodes and connectors */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.flowchart-node {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #333;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    min-width: 100px; /* Ensures consistent node width */
+}
+
+.flowchart-connector {
+    width: 40px; /* Width of the connecting line */
+    height: 2px; /* Thickness of the connecting line */
+    background-color: #333;
+    position: relative; /* For positioning arrowheads */
+}
+
+/* Creating arrowheads using pseudo-elements */
+.flowchart-connector::after {
+    content: '';
+    position: absolute;
+    left: -5px; /* Adjust position relative to the line */
+    top: -4px; /* Adjust vertical position */
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #333; /* Color of the arrowhead */
+}

@@ -1,0 +1,64 @@
+{
+  "fertilizers": [
+    {
+      "name": "Quality Fertilizer I",
+      "quantity": 10,
+      "workstation": "Church Workbench",
+      "ingredients": [
+        {
+          "name": "Growth Enhancer",
+          "workstation": "Alchemy workbench I",
+          "quantity": 1,
+          "ingredients": [
+            {
+              "name": "Life solution",
+              "workstation": "Hand mixer",
+              "quantity": 1,
+              "ingredients": [
+                {
+                  "name": "Brain, maggot, or Yellow flower",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "Quality Fertilizer II",
+      "quantity": 10,
+      "workstation": "Church Workbench",
+      "ingredients": [
+        {
+          "name": "Flavor Enhancer",
+          "workstation": "Alchemy workbench II",
+          "quantity": 2,
+          "ingredients": [
+            {
+              "name": "Toxic solution",
+              "workstation": "Hand mixer",
+              "quantity": 2,
+              "ingredients": [
+                {
+                  "name": "Red mushroom",
+                  "quantity": 2
+                }
+              ]
+            }, {
+              "name": "Life extract",
+              "workstation": "Distillation cube",
+              "quantity": 2,
+              "ingredients": [
+                {
+                  "name": "Heart (or Maggot, or Yellow flower)",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
