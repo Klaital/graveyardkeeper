@@ -27,6 +27,13 @@
     gap: 20px;
 }
 
+.recipe-with-ingredients {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 .flowchart-node {
     background-color: #f0f0f0;
     color: black;

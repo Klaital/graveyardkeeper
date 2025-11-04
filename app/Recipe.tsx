@@ -31,13 +31,13 @@ export function Recipe(props: RecipeProps) {
     const renderQty = (props.quantity) ? <span>{props.quantity}x </span> : <span></span>;
     const renderWorkstation = (props.workstation) ? <h2 className="text-sm">@{props.workstation} </h2> : <span></span>;
     return (
-        <>
+        <div className="recipe-with-ingredients">
             <div className="recipe flowchart-node">
                 <h1>{renderQty}{props.name}</h1>
                 {renderWorkstation}
             </div>
             {props.ingredients && renderIngredients(props.ingredients)}
-        </>
+        </div>
     )
 }
 
