@@ -19,12 +19,13 @@ export class RecipeSetProps {
 
 export function Recipe(props: RecipeProps) {
     const renderIngredients = (ingredients: RecipeProps[]) => {
-        return ingredients.map((ingredient, i) => (
-            <>
-                <div className="flowchart-connector"></div>
-                <Recipe key={i} {...ingredient} />
+        return <div className="ingredients-container">
+            {ingredients.map((ingredient, i) => (<>
+            <div className="flowchart-connector"></div>
+            <Recipe key={i} {...ingredient} />
             </>
-        ))
+        ))}
+        </div>
     }
     const renderQty = (props.quantity) ? <span>{props.quantity}x </span> : <span></span>;
     const renderWorkstation = (props.workstation) ? <h2 className="text-sm">@{props.workstation} </h2> : <span></span>;
@@ -41,14 +42,12 @@ export function Recipe(props: RecipeProps) {
 
 
 export function RecipeSet(props: {recipeSets: RecipeSetProps[]}) {
-    const render = props.recipeSets.map((r: RecipeSetProps, idx) => <>
-        <div className="recipeset-container" key={idx}>
+    const render = props.recipeSets.map((r: RecipeSetProps, idx) => <div className="recipeset-container" key={idx}>
             <h1>{r.setName}</h1>
             {r.recipes.map((e, i) => <div key={i} className="app flex flex-wrap justify-around items-start flowchart-container">
                 <Recipe key={i} {...e} />
             </div>)}
         </div>
-        </>
     )
 
     return <>{render}</>
