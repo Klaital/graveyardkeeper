@@ -69,6 +69,137 @@
           ]
         }
       ]
+    }, {
+      "name": "Silver injection",
+      "quantity": 5,
+      "workstation": "Church workbench",
+      "ingredients": [
+        {
+          "name": "Silver elixir",
+          "quantity": 1,
+          "workstation": "Alchemy workbench II",
+          "ingredients": [
+            {
+              "name": "Silver powder",
+              "quantity": 1,
+              "workstation": "Alchemy mill",
+              "ingredients": [
+                {
+                  "name": "Silver nugget",
+                  "quantity": 1
+                }
+              ]
+            }, {
+              "name": "Order solution",
+              "quantity": 1,
+              "workstation": "Hand mixer",
+              "ingredients": [
+                {
+                  "name": "Bee (or Green jelly or White flower)",
+                  "quantity": 1
+                }
+              ]
+            }, {
+              "name": "Life extract",
+              "quantity": 1,
+              "workstation": "Distillation cube",
+              "ingredients": [
+                {
+                  "name": "Heart (or Maggot or Yellow flower)",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      , {
+          "name": "Water",
+          "quantity": 6,
+          "workstation": "well"
+        }, {
+          "name": "Conical flasks",
+          "quantity": 2,
+          "workstation": "Furnace II",
+          "ingredients": [
+            {
+              "name": "Glass",
+              "quantity": 4,
+              "workstation": "Furnace",
+              "ingredients": [
+                {
+                  "name": "River sand",
+                  "quantity": 4
+                }, {
+                  "name": "Water",
+                  "quantity": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "Lye injection",
+      "quantity": 5,
+      "workstation": "Church workbench",
+      "ingredients": [
+        {
+          "name": "Alkali",
+          "quantity": 1,
+          "workstation": "Alchemy workbench II",
+          "ingredients": [
+            {
+              "name": "Life powder",
+              "quantity": 1,
+              "workstation": "Alchemy mill",
+              "ingredients": [
+                {
+                  "name": "Intestine (or Sulfur)",
+                  "quantity": 1
+                }
+              ]
+            }, {
+              "name": "Death solution",
+              "quantity": 1,
+              "workstation": "Hand mixer",
+              "ingredients": [
+                {
+                  "name": "Dark brain (Or Black jelly",
+                  "quantity": 1
+                }
+              ]
+            }, {
+              "name": "Blood",
+              "quantity": 1
+            }
+          ]
+        }
+      , {
+          "name": "Water",
+          "quantity": 6,
+          "workstation": "well"
+        }, {
+          "name": "Conical flasks",
+          "quantity": 2,
+          "workstation": "Furnace II",
+          "ingredients": [
+            {
+              "name": "Glass",
+              "quantity": 4,
+              "workstation": "Furnace",
+              "ingredients": [
+                {
+                  "name": "River sand",
+                  "quantity": 4
+                }, {
+                  "name": "Water",
+                  "quantity": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "fertilizers": [
