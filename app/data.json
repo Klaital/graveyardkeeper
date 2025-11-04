@@ -11,17 +11,25 @@
           "quantity": 1,
           "ingredients": [
             {
+              "name": "Ash",
+              "workstation": "cremation",
+              "quantity": 1
+            }, {
               "name": "Life solution",
               "workstation": "Hand mixer",
               "quantity": 1,
               "ingredients": [
                 {
-                  "name": "Brain, maggot, or Yellow flower",
+                  "name": "Brain, (or 2x maggot, or 2x Yellow flower)",
                   "quantity": 1
                 }
               ]
             }
           ]
+        }, {
+          "name": "Peat",
+          "quantity": 10,
+          "workstation": "compost heap"
         }
       ]
     }, {
@@ -50,7 +58,7 @@
               "quantity": 2,
               "ingredients": [
                 {
-                  "name": "Heart (or Maggot, or Yellow flower)",
+                  "name": "Heart (or 2x Maggot, or 2x Yellow flower)",
                   "quantity": 1
                 }
               ]

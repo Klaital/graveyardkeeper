@@ -4,13 +4,27 @@
 .flowchart-container {
     display: flex; /* Enables Flexbox layout */
     flex-direction: row;
-    justify-content: flex-start; /* Centers the flowchart horizontally */
+    justify-content: flex-start;
     align-items: center; /* Vertically aligns items in the center */
     gap: 20px; /* Adds space between nodes and connectors */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: lightgray;
+}
+.ingredients-container {
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    gap: 10px; /* Reduced gap for tighter vertical stacking */
+}
+
+.ingredient-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
 .flowchart-node {

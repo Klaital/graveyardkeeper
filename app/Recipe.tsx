@@ -20,10 +20,11 @@ export class RecipeSetProps {
 export function Recipe(props: RecipeProps) {
     const renderIngredients = (ingredients: RecipeProps[]) => {
         return <div className="ingredients-container">
-            {ingredients.map((ingredient, i) => (<>
-            <div className="flowchart-connector"></div>
-            <Recipe key={i} {...ingredient} />
-            </>
+            {ingredients.map((ingredient, i) => (
+            <div key={i} className="ingredient-row">
+                <div className="flowchart-connector"></div>
+                <Recipe {...ingredient} />
+            </div>
         ))}
         </div>
     }
