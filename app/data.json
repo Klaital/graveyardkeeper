@@ -271,5 +271,84 @@
       ]
     }
 
+  ],
+  "church": [
+    {
+      "name": "Candle (1)",
+      "quantity": 4,
+      "workbench": "Church workbench",
+      "ingredients": [
+        {
+          "name": "Fat",
+          "quantity": 2
+        }, {
+          "name": "Beeswax",
+          "quantity": 2
+        }, {
+          "name": "Hemp rope",
+          "quantity": 1
+        }
+      ]
+    }, {
+      "name": "Candle (3)",
+      "quantity": 4,
+      "workbench": "Church workbench",
+      "ingredients": [
+        {
+          "name": "Fat",
+          "quantity": 2
+        }, {
+          "name": "Beeswax",
+          "quantity": 2
+        }, {
+          "name": "White paint",
+          "quantity": 3,
+          "workstation": "Alchemy workbench I",
+          "ingredients": [
+            {
+              "name": "White powder",
+              "quantity": 3,
+              "workbench": "Alchemy mill",
+              "ingredients": [
+                {
+                  "name": "Bone",
+                  "quantity": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "Candle (4)",
+      "quantity": 4,
+      "workbench": "Church workbench",
+      "ingredients": [
+        {
+          "name": "Beeswax",
+          "quantity": 4
+        }, {
+          "name": "White paint",
+          "quantity": 2,
+          "workstation": "Alchemy workbench I",
+          "ingredients": [
+            {
+              "name": "White powder",
+              "quantity": 2,
+              "workbench": "Alchemy mill",
+              "ingredients": [
+                {
+                  "name": "Bone",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },{
+          "name": "Hemp rope",
+          "quantity": 1
+        }
+      ]
+    }
   ]
 }
