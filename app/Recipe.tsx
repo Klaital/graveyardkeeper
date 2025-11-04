@@ -1,5 +1,6 @@
 import './styles.css'
 import {GetStaticProps} from 'next';
+import { useState } from 'react';
 import data from './data.json';
 
 
@@ -43,11 +44,25 @@ export function Recipe(props: RecipeProps) {
 
 
 export function RecipeSet(props: {recipeSets: RecipeSetProps[]}) {
+    const [collapsedSets, setCollapsedSets] = useState<{[key: number]: boolean}>({});
+
+    const toggleCollapse = (index: number) => {
+        setCollapsedSets(prev => ({
+            ...prev,
+            [index]: !prev[index]
+        }));
+    };
+
     const render = props.recipeSets.map((r: RecipeSetProps, idx) => <div className="recipeset-container" key={idx}>
-            <h1>{r.setName}</h1>
-            {r.recipes.map((e, i) => <div key={i} className="app flex flex-wrap justify-around items-start flowchart-container">
-                <Recipe key={i} {...e} />
-            </div>)}
+            <h1 className="collapsible-header" onClick={() => toggleCollapse(idx)}>
+                <span className={`collapse-arrow ${collapsedSets[idx] ? 'collapsed' : 'expanded'}`}>▼</span>
+                {r.setName}
+            </h1>
+            <div className={`recipeset-content ${collapsedSets[idx] ? 'collapsed' : 'expanded'}`}>
+                {r.recipes.map((e, i) => <div key={i} className="app flex flex-wrap justify-around items-start flowchart-container">
+                    <Recipe key={i} {...e} />
+                </div>)}
+            </div>
         </div>
     )
 

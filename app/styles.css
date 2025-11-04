@@ -7,6 +7,47 @@
     margin-top: 2rem;
     text-transform: capitalize;
 }
+
+.collapsible-header {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.collapsible-header:hover {
+    color: #555;
+}
+
+.collapse-arrow {
+    transition: transform 0.2s ease;
+    font-size: 0.8em;
+}
+
+.collapse-arrow.collapsed {
+    transform: rotate(-90deg);
+}
+
+.collapse-arrow.expanded {
+    transform: rotate(0deg);
+}
+
+.recipeset-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.recipeset-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
+
+.recipeset-content.expanded {
+    max-height: 5000px;
+    opacity: 1;
+}
 .flowchart-container {
     font-size: 1rem;
     display: flex; /* Enables Flexbox layout */
