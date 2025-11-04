@@ -33,7 +33,7 @@ export function Recipe(props: RecipeProps) {
     return (
         <div className="recipe-with-ingredients">
             <div className="recipe flowchart-node">
-                <h1>{renderQty}{props.name}</h1>
+                <h2>{renderQty}{props.name}</h2>
                 {renderWorkstation}
             </div>
             {props.ingredients && renderIngredients(props.ingredients)}
