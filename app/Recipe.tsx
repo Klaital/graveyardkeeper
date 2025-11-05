@@ -2,7 +2,9 @@ import './styles.css'
 import {GetStaticProps} from 'next';
 import { useState } from 'react';
 import data from './data.json';
-
+import redSkull from './Red_Skull_Symbol.webp';
+import whiteSkull from './White_Skull_Symbol.webp';
+import Image from "next/image";
 
 export class RecipeProps {
     public name!: string;
@@ -32,7 +34,12 @@ export function Recipe(props: RecipeProps) {
     }
     const renderQty = (props.quantity) ? <span>{props.quantity}x </span> : <span></span>;
     const renderWorkstation = (props.workstation) ? <h2 className="text-sm">@{props.workstation} </h2> : <span></span>;
-    const renderNotes = (props.notes) ? <p>{props.notes}</p> : <p></p>
+    const renderNotes = (props.notes) ? 
+        <p className="text-xs">
+            {props.notes.split('red').map((part, i) => 
+                i === 0 ? part : [<Image key={i} src={redSkull} alt="red skull" className="inline-block w-4 h-4" />, part]
+            )}
+        </p> : <p></p>
     return (
         <div className="recipe-with-ingredients">
             <div className="recipe flowchart-node">
