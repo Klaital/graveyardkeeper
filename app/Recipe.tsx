@@ -8,6 +8,7 @@ export class RecipeProps {
     public name!: string;
     public quantity?: number;
     public workstation?: string;
+    public notes?: string;
     public ingredients?: RecipeProps[];
 }
 
@@ -31,11 +32,13 @@ export function Recipe(props: RecipeProps) {
     }
     const renderQty = (props.quantity) ? <span>{props.quantity}x </span> : <span></span>;
     const renderWorkstation = (props.workstation) ? <h2 className="text-sm">@{props.workstation} </h2> : <span></span>;
+    const renderNotes = (props.notes) ? <p>{props.notes}</p> : <p></p>
     return (
         <div className="recipe-with-ingredients">
             <div className="recipe flowchart-node">
                 <h2>{renderQty}{props.name}</h2>
                 {renderWorkstation}
+                {renderNotes}
             </div>
             {props.ingredients && renderIngredients(props.ingredients)}
         </div>

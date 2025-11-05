@@ -4,6 +4,7 @@
       "name": "Glue injection",
       "quantity": 5,
       "workstation": "Church workbench",
+      "notes": "Grants +1 white",
       "ingredients": [
         {
           "name": "Glue",
@@ -16,7 +17,7 @@
               "workstation": "Alchemy mill",
               "ingredients": [
                 {
-                  "name": "Cabbage (or Pumpkin or Crop waste",
+                  "name": "Cabbage (or Pumpkin or Crop waste)",
                   "quantity": 1
                 }
               ]
@@ -73,6 +74,7 @@
       "name": "Silver injection",
       "quantity": 5,
       "workstation": "Church workbench",
+      "notes": "Grants -1 red/+1 white",
       "ingredients": [
         {
           "name": "Silver elixir",
@@ -142,6 +144,7 @@
       "name": "Lye injection",
       "quantity": 5,
       "workstation": "Church workbench",
+      "notes": "Grants +1 red / +1 white",
       "ingredients": [
         {
           "name": "Alkali",
@@ -164,7 +167,7 @@
               "workstation": "Hand mixer",
               "ingredients": [
                 {
-                  "name": "Dark brain (Or Black jelly",
+                  "name": "Dark brain (Or Black jelly)",
                   "quantity": 1
                 }
               ]
@@ -246,6 +249,9 @@
           "quantity": 2,
           "ingredients": [
             {
+              "name": "Ash",
+              "quantity": 2
+            }, {
               "name": "Toxic solution",
               "workstation": "Hand mixer",
               "quantity": 2,
