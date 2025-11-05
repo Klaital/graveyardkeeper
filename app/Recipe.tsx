@@ -36,9 +36,11 @@ export function Recipe(props: RecipeProps) {
     const renderWorkstation = (props.workstation) ? <h2 className="text-sm">@{props.workstation} </h2> : <span></span>;
     const renderNotes = (props.notes) ? 
         <p className="text-xs">
-            {props.notes.split('red').map((part, i) => 
-                i === 0 ? part : [<Image key={i} src={redSkull} alt="red skull" className="inline-block w-4 h-4" />, part]
-            )}
+            {props.notes.split(/\b(red|white)\b/g).map((part, i) => {
+                if (part === 'red') return <Image key={i} src={redSkull} alt="red skull" className="inline-block w-4 h-4" />;
+                if (part === 'white') return <Image key={i} src={whiteSkull} alt="white skull" className="inline-block w-4 h-4" />;
+                return part;
+            })}
         </p> : <p></p>
     return (
         <div className="recipe-with-ingredients">
