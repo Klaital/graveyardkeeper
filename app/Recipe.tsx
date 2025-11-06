@@ -1,23 +1,9 @@
 import './styles.css'
-import {GetStaticProps} from 'next';
 import { useState } from 'react';
-import data from './data.json';
 import redSkull from './Red_Skull_Symbol.webp';
 import whiteSkull from './White_Skull_Symbol.webp';
 import Image from "next/image";
-
-export class RecipeProps {
-    public name!: string;
-    public quantity?: number;
-    public workstation?: string;
-    public notes?: string;
-    public ingredients?: RecipeProps[];
-}
-
-export class RecipeSetProps {
-    public setName!: string;
-    public recipes!: RecipeProps[];
-}
+import { RecipeProps, RecipeSetProps } from './recipe-loader';
 
 
 
@@ -81,9 +67,3 @@ export function RecipeSet(props: {recipeSets: RecipeSetProps[]}) {
     return <>{render}</>
 }
 
-export async function getStaticProps() {
-    // load the recipes from local file data.json
-    // map the recipes into RecipeSetProps where the setName is the key, and the recipes is the value
-    const recipeSets = Object.entries(data).map(([setName, recipes]: [string, RecipeProps[]]) => ({ setName, recipes }));
-    return {props:{recipeSets}}
-}

@@ -1,0 +1,306 @@
+{
+  "water": {
+    "name": "Water",
+    "quantity": 6,
+    "workstation": "well"
+  },
+  "water_basic": {
+    "name": "Water",
+    "quantity": 2,
+    "workstation": "well"
+  },
+  "health_powder": {
+    "name": "Health powder",
+    "quantity": 1,
+    "workstation": "Alchemy mill",
+    "ingredients": ["cabbage"]
+  },
+  "life_solution": {
+    "name": "Life solution",
+    "quantity": 1,
+    "workstation": "Hand mixer",
+    "ingredients": ["brain"]
+  },
+  "chaos_extract": {
+    "name": "Chaos extract",
+    "quantity": 1,
+    "workstation": "Distillation cube",
+    "ingredients": ["butterfly"]
+  },
+  "glue": {
+    "name": "Glue",
+    "quantity": 1,
+    "workstation": "Alchemy workbench II",
+    "ingredients": ["health_powder", "life_solution", "chaos_extract"]
+  },
+  "glass": {
+    "name": "Glass",
+    "quantity": 4,
+    "workstation": "Furnace",
+    "ingredients": [
+      {"recipeId": "river_sand", "quantityOverride": 4},
+      {"recipeId": "water_basic", "quantityOverride": 2}
+    ]
+  },
+  "conical_flasks": {
+    "name": "Conical flasks",
+    "quantity": 2,
+    "workstation": "Furnace II",
+    "ingredients": ["glass"]
+  },
+  "silver_powder": {
+    "name": "Silver powder",
+    "quantity": 1,
+    "workstation": "Alchemy mill",
+    "ingredients": ["silver_nugget"]
+  },
+  "order_solution": {
+    "name": "Order solution",
+    "quantity": 1,
+    "workstation": "Hand mixer",
+    "ingredients": ["bee"]
+  },
+  "life_extract": {
+    "name": "Life extract",
+    "quantity": 1,
+    "workstation": "Distillation cube",
+    "ingredients": ["heart"]
+  },
+  "silver_elixir": {
+    "name": "Silver elixir",
+    "quantity": 1,
+    "workstation": "Alchemy workbench II",
+    "ingredients": ["silver_powder", "order_solution", "life_extract"]
+  },
+  "life_powder": {
+    "name": "Life powder",
+    "quantity": 1,
+    "workstation": "Alchemy mill",
+    "ingredients": ["intestine"]
+  },
+  "death_solution": {
+    "name": "Death solution",
+    "quantity": 1,
+    "workstation": "Hand mixer",
+    "ingredients": ["dark_brain"]
+  },
+  "alkali": {
+    "name": "Alkali",
+    "quantity": 1,
+    "workstation": "Alchemy workbench II",
+    "ingredients": ["life_powder", "death_solution", "blood"]
+  },
+  "ash": {
+    "name": "Ash",
+    "workstation": "cremation",
+    "quantity": 1
+  },
+  "growth_enhancer": {
+    "name": "Growth Enhancer",
+    "workstation": "Alchemy workbench I",
+    "quantity": 1,
+    "ingredients": ["ash", "life_solution"]
+  },
+  "toxic_solution": {
+    "name": "Toxic solution",
+    "workstation": "Hand mixer",
+    "quantity": 2,
+    "ingredients": [{"recipeId": "red_mushroom", "quantityOverride": 2}]
+  },
+  "flavor_enhancer": {
+    "name": "Flavor Enhancer",
+    "workstation": "Alchemy workbench II",
+    "quantity": 2,
+    "ingredients": [
+      {"recipeId": "ash", "quantityOverride": 2},
+      "toxic_solution",
+      {"recipeId": "life_extract", "quantityOverride": 2}
+    ]
+  },
+  "white_powder": {
+    "name": "White powder",
+    "workstation": "Alchemy mill",
+    "ingredients": ["bone"]
+  },
+  "white_paint": {
+    "name": "White paint",
+    "workstation": "Alchemy workbench I",
+    "ingredients": ["white_powder"]
+  },
+  "freshener": {
+    "name": "Freshener",
+    "quantity": 1,
+    "workstation": "Alchemy workbench I",
+    "ingredients": ["oil", "order_solution"]
+  },
+  "acceleration_powder": {
+    "name": "Acceleration powder",
+    "workstation": "Alchemy mill",
+    "quantity": 1,
+    "ingredients": ["hemp"]
+  },
+  "aromatizer": {
+    "name": "Aromatizer",
+    "workstation": "Alchemy workbench II",
+    "quantity": 1,
+    "ingredients": ["acceleration_powder", "alcohol", "life_extract"]
+  },
+  "glue_injection": {
+    "name": "Glue injection",
+    "quantity": 5,
+    "workstation": "Church workbench",
+    "notes": "Grants +1 white",
+    "ingredients": ["glue", "water", "conical_flasks"]
+  },
+  "silver_injection": {
+    "name": "Silver injection",
+    "quantity": 5,
+    "workstation": "Church workbench",
+    "notes": "Grants -1 red/+1 white",
+    "ingredients": ["silver_elixir", "water", "conical_flasks"]
+  },
+  "lye_injection": {
+    "name": "Lye injection",
+    "quantity": 5,
+    "workstation": "Church workbench",
+    "notes": "Grants +1 red / +1 white",
+    "ingredients": ["alkali", "water", "conical_flasks"]
+  },
+  "zombie_juice": {
+    "name": "Zombie Juice",
+    "quantity": 1,
+    "workstation": "Alchemy workbench I",
+    "ingredients": ["health_powder", "blood"]
+  },
+  "quality_fertilizer_1": {
+    "name": "Quality Fertilizer I",
+    "quantity": 10,
+    "workstation": "Church Workbench",
+    "ingredients": ["growth_enhancer", {"recipeId": "peat", "quantityOverride": 10}]
+  },
+  "quality_fertilizer_2": {
+    "name": "Quality Fertilizer II",
+    "quantity": 10,
+    "workstation": "Church Workbench",
+    "ingredients": ["flavor_enhancer"]
+  },
+  "candle_1": {
+    "name": "Candle (1)",
+    "quantity": 4,
+    "workstation": "Church workbench",
+    "ingredients": [
+      {"recipeId": "fat", "quantityOverride": 2},
+      {"recipeId": "beeswax", "quantityOverride": 2},
+      "hemp_rope"
+    ]
+  },
+  "candle_3": {
+    "name": "Candle (3)",
+    "quantity": 4,
+    "workstation": "Church workbench",
+    "ingredients": [
+      {"recipeId": "fat", "quantityOverride": 2},
+      {"recipeId": "beeswax", "quantityOverride": 2},
+      {"recipeId": "white_paint", "quantityOverride": 3}
+    ]
+  },
+  "candle_4": {
+    "name": "Candle (4)",
+    "quantity": 4,
+    "workstation": "Church workbench",
+    "ingredients": [
+      {"recipeId": "beeswax", "quantityOverride": 4},
+      {"recipeId": "white_paint", "quantityOverride": 2},
+      "hemp_rope"
+    ]
+  },
+  "incense": {
+    "name": "Incense",
+    "workstation": "Church workbench",
+    "quantity": 2,
+    "ingredients": ["freshener"]
+  },
+  "incense_2": {
+    "name": "Incense II",
+    "workstation": "Church workbench",
+    "quantity": 2,
+    "ingredients": ["aromatizer"]
+  },
+  "cabbage": {
+    "name": "Cabbage (or Pumpkin or Crop waste)",
+    "quantity": 1
+  },
+  "brain": {
+    "name": "Brain, (or 2x maggot, or 2x Yellow flower)",
+    "quantity": 1
+  },
+  "butterfly": {
+    "name": "Butterfly (or Moth)",
+    "quantity": 1
+  },
+  "river_sand": {
+    "name": "River sand",
+    "quantity": 4
+  },
+  "silver_nugget": {
+    "name": "Silver nugget",
+    "quantity": 1
+  },
+  "bee": {
+    "name": "Bee (or Green jelly, or White flower)",
+    "quantity": 1
+  },
+  "heart": {
+    "name": "Heart (or Maggot, or Yellow flower)",
+    "quantity": 1
+  },
+  "intestine": {
+    "name": "Intestine (or Sulfur)",
+    "quantity": 1
+  },
+  "dark_brain": {
+    "name": "Dark brain (Or Black jelly)",
+    "quantity": 1
+  },
+  "blood": {
+    "name": "Blood",
+    "quantity": 1
+  },
+  "peat": {
+    "name": "Peat",
+    "quantity": 10,
+    "workstation": "compost heap"
+  },
+  "red_mushroom": {
+    "name": "Red mushroom",
+    "quantity": 2
+  },
+  "fat": {
+    "name": "Fat",
+    "quantity": 2
+  },
+  "beeswax": {
+    "name": "Beeswax",
+    "quantity": 2
+  },
+  "hemp_rope": {
+    "name": "Hemp rope",
+    "quantity": 1
+  },
+  "bone": {
+    "name": "Bone",
+    "quantity": 2
+  },
+  "oil": {
+    "name": "Oil",
+    "quantity": 1
+  },
+  "alcohol": {
+    "name": "Alcohol",
+    "quantity": 1
+  },
+  "hemp": {
+    "name": "Hemp (or Honey)",
+    "quantity": 1
+  }
+}

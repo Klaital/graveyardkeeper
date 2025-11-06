@@ -1,0 +1,19 @@
+{
+  "embalming": [
+    "glue_injection",
+    "silver_injection", 
+    "lye_injection",
+    "zombie_juice"
+  ],
+  "fertilizers": [
+    "quality_fertilizer_1",
+    "quality_fertilizer_2"
+  ],
+  "church": [
+    "candle_1",
+    "candle_3", 
+    "candle_4",
+    "incense",
+    "incense_2"
+  ]
+}
