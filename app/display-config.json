@@ -1,7 +1,8 @@
 {
   "embalming": [
     "glue_injection",
-    "silver_injection", 
+    "silver_injection",
+    "gold_injection",
     "lye_injection",
     "zombie_juice"
   ],

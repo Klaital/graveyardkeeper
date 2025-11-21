@@ -21,6 +21,12 @@
     "workstation": "Hand mixer",
     "ingredients": ["brain"]
   },
+  "health_extract": {
+    "name": "Health extract",
+    "quantity": 2,
+    "workstation": "Distillation cube",
+    "ingredients": ["Pumpkin"]
+  },
   "chaos_extract": {
     "name": "Chaos extract",
     "quantity": 1,
@@ -58,7 +64,7 @@
     "name": "Order solution",
     "quantity": 1,
     "workstation": "Hand mixer",
-    "ingredients": ["bee"]
+    "ingredients": ["White flower"]
   },
   "life_extract": {
     "name": "Life extract",
@@ -71,6 +77,12 @@
     "quantity": 1,
     "workstation": "Alchemy workbench II",
     "ingredients": ["silver_powder", "order_solution", "life_extract"]
+  },
+  "gold_elixir": {
+    "name": "Golden elixir",
+    "quantity": 1,
+    "workstation": "Alchemy workbench II",
+    "ingredients": ["gold_powder", "order_solution", "health_extract"]
   },
   "life_powder": {
     "name": "Life powder",
@@ -159,6 +171,13 @@
     "notes": "Grants -1 red/+1 white",
     "ingredients": ["silver_elixir", "water", "conical_flasks"]
   },
+  "gold_injection": {
+    "name": "Gold injection",
+    "quantity": 5,
+    "workstation": "Church workbench",
+    "notes": "Grants -2 red/+2 white",
+    "ingredients": ["golden_elixir", "water", "conical_flasks"]
+  },
   "lye_injection": {
     "name": "Lye injection",
     "quantity": 5,
@@ -182,7 +201,7 @@
     "name": "Quality Fertilizer II",
     "quantity": 10,
     "workstation": "Church Workbench",
-    "ingredients": ["flavor_enhancer"]
+    "ingredients": ["flavor_enhancer", {"recipeId": "peat", "quantityOverride": 10}]
   },
   "candle_1": {
     "name": "Candle (1)",
