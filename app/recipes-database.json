@@ -25,7 +25,7 @@
     "name": "Health extract",
     "quantity": 2,
     "workstation": "Distillation cube",
-    "ingredients": ["Pumpkin"]
+    "ingredients": ["pumpkin"]
   },
   "chaos_extract": {
     "name": "Chaos extract",
@@ -60,11 +60,17 @@
     "workstation": "Alchemy mill",
     "ingredients": ["silver_nugget"]
   },
+  "gold_powder": {
+    "name": "Gold powder",
+    "quantity": 1,
+    "workstation": "Alchemy mill",
+    "ingredients": ["gold_nugget"]
+  },
   "order_solution": {
     "name": "Order solution",
     "quantity": 1,
     "workstation": "Hand mixer",
-    "ingredients": ["White flower"]
+    "ingredients": ["bee"]
   },
   "life_extract": {
     "name": "Life extract",
@@ -78,7 +84,7 @@
     "workstation": "Alchemy workbench II",
     "ingredients": ["silver_powder", "order_solution", "life_extract"]
   },
-  "gold_elixir": {
+  "golden_elixir": {
     "name": "Golden elixir",
     "quantity": 1,
     "workstation": "Alchemy workbench II",
@@ -265,8 +271,16 @@
     "name": "Silver nugget",
     "quantity": 1
   },
+  "gold_nugget": {
+    "name": "Gold nugget",
+    "quantity": 1
+  },
   "bee": {
     "name": "Bee (or Green jelly, or White flower)",
+    "quantity": 1
+  },
+  "pumpkin": {
+    "name": "Pumpkin",
     "quantity": 1
   },
   "heart": {
